@@ -24,7 +24,11 @@ INCLUDEPATH = C:/glut-3.5/include
 LIBS += C:/glut-3.7.6-bin/glut32.lib
 
 OTHER_FILES += \
-    CurrentView.jpg
+    CurrentView.jpg \
+    59.png \
+    CurrentView.png
+
+
 
 
 
