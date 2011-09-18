@@ -72,23 +72,27 @@ void drawFractal(int num)
         glPushMatrix();
         glPushMatrix();
         //First L
+        glColor3f(1,0,0);
         glTranslatef(0.5,1.0,0.0);
         glRotatef(90,0,0,1);
         glScalef(-0.5,0.5,1.0);
         drawFractal(num - 1);
         glPopMatrix();
         //Second L
+        glColor3f(0,1,0);
         glTranslatef(0.5,0.5,0.0);
         glRotatef(-90,0,0,1);
         glScalef(-0.5,0.5,0.5);
         drawFractal(num - 1);
         glPopMatrix();
         //Third L
+        glColor3f(1,1,0);
         glTranslatef(0.5,0.5,0.0);
         glRotatef(180,0,0,1);
         glScalef(0.25,0.25,0.25);
         drawFractal(num - 1);
         //Fourth L
+        glColor3f(0,0,1);
         glPopMatrix ();
         glTranslatef(0.5,0.0,0.0);
         glScalef(0.5,0.5,0.5);
